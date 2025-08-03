@@ -4,7 +4,7 @@ A modern developer portfolio built with **React**, **Vite**, **TypeScript**, and
 
 ## 🚀 Live Site
 
-👉 [Visit Portfolio on Netlify](https://your-site-name.netlify.app)  
+👉 [Visit Portfolio on Netlify](https://688fd29c3a1848ac7e4b0766--minhajul-portfolio-site2025-github.netlify.app/)  
 _(Replace with your actual Netlify URL)_
 
 ## 🛠️ Tech Stack
@@ -22,7 +22,7 @@ _(Replace with your actual Netlify URL)_
 
 **Minhajul Khan**  
 💼 [LinkedIn](https://www.linkedin.com/in/minhajul-khan-09130933b/)  
-🌐 [Portfolio](https://688fca0c50d8eba674ce26d4--minhajul-portfolio202502.netlify.app/)
+🌐 [Portfolio](https://688fd29c3a1848ac7e4b0766--minhajul-portfolio-site2025-github.netlify.app/)
 
 ## 📁 Project Structure
 
