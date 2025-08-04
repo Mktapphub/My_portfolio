@@ -5,7 +5,7 @@ A modern developer portfolio built with **React**, **Vite**, **TypeScript**, and
 ## 🚀 Live Site
 
 👉 [Visit Portfolio on Netlify](https://688fd29c3a1848ac7e4b0766--minhajul-portfolio-site2025-github.netlify.app/)  
-_(Replace with your actual Netlify URL)_
+
 
 ## 🛠️ Tech Stack
 
