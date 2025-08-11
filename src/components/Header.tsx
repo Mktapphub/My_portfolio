@@ -35,7 +35,7 @@ const Header = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'bg-background/80 backdrop-blur-lg shadow-soft' : 'bg-transparent'
       }`}>
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
           <div className="flex justify-between items-center">
             <div className="text-xl font-semibold text-gradient">
               Minhajul Khan
@@ -68,9 +68,9 @@ const Header = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-4 md:px-6 max-w-4xl mx-auto">
           <div className="fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient leading-tight">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-6 text-gradient leading-tight">
               Minhajul Khan
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 mb-8 font-light">

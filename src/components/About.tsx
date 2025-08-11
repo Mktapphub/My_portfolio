@@ -4,8 +4,8 @@ import pic from "@/assets/Min.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
+     <section id="about" className="py-16 md:py-20 bg-muted/30 scroll-mt-24 md:scroll-mt-28">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
@@ -16,11 +16,11 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12 items-center">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12 items-center">
             {/* Profile Photo */}
             <div className="flex justify-center md:justify-start scale-in">
               <div className="relative">
-                <Avatar className="w-64 h-64 border-4 border-primary/20 shadow-elegant">
+                <Avatar className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 border-4 border-primary/20 shadow-elegant">
                   <AvatarImage 
                     src= {pic}
                     alt="Minhajul khan"

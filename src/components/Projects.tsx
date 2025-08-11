@@ -97,10 +97,10 @@ const Projects = () => {
 
   return (
     <>
-      <section id="projects" className="py-20">
-        <div className="container mx-auto px-6">
+      <section id="projects" className="py-16 md:py-20 scroll-mt-24 md:scroll-mt-28">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16 fade-in">
+            <div className="text-center mb-12 md:mb-16 fade-in">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
                 Featured Projects
               </h2>
@@ -109,7 +109,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {projects.map((project, index) => (
                 <div 
                   key={project.id}

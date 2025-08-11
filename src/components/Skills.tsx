@@ -53,10 +53,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-20 bg-muted/30" ref={sectionRef}>
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-16 md:py-20 bg-muted/30 scroll-mt-24 md:scroll-mt-28" ref={sectionRef}>
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 fade-in">
+          <div className="text-center mb-12 md:mb-16 fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
               Skills & Technologies
             </h2>
@@ -103,7 +103,7 @@ const Skills = () => {
           </div>
 
           {/* Additional Skills Icons */}
-          <div className="mt-16 fade-in">
+                    <div className="mt-12 md:mt-16 fade-in">
             <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
               Technologies I Work With
             </h3>

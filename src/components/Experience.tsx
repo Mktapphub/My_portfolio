@@ -53,8 +53,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="experience" className="py-16 md:py-20 scroll-mt-24 md:scroll-mt-28">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
@@ -74,7 +74,7 @@ const Experience = () => {
               {experiences.map((exp, index) => (
                 <div 
                   key={index}
-                  className={`relative slide-up flex items-center ${
+                  className={`relative slide-up flex items-start ${
                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                   }`}
                   style={{ animationDelay: `${index * 0.2}s` }}
