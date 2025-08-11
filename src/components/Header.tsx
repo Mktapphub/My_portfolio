@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import heroImage from '@/assets/hero-bg.jpg';
 import cvFile from "@/assets/Minhajul_cv.pdf";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 const handleDownloadCV = () => {
   const link = document.createElement('a');
@@ -40,7 +41,8 @@ const Header = () => {
             <div className="text-xl font-semibold text-gradient">
               Minhajul Khan
             </div>
-            <div className="hidden md:flex space-x-8">
+            {/* Desktop menu */}
+            <div className="hidden md:flex items-center space-x-8">
               {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
                 <button
                   key={item}
@@ -50,6 +52,34 @@ const Header = () => {
                   {item}
                 </button>
               ))}
+            </div>
+             {/* Mobile menu */}
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger aria-label="Open menu" className="p-2 rounded-md hover:bg-foreground/5 focus:outline-none focus:ring-2 focus:ring-primary/40">
+                  <Menu className="w-6 h-6 text-foreground" />
+                </SheetTrigger>
+                <SheetContent side="right" className="w-3/4 sm:w-80">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="text-lg font-semibold">Menu</div>
+                    <SheetClose aria-label="Close menu" className="p-2 rounded-md hover:bg-foreground/5">
+                      <X className="w-5 h-5" />
+                    </SheetClose>
+                  </div>
+                  <nav className="flex flex-col gap-1">
+                    {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
+                      <SheetClose asChild key={item}>
+                        <button
+                          onClick={() => scrollToSection(item.toLowerCase())}
+                          className="text-left px-3 py-3 rounded-md hover:bg-foreground/5 text-foreground/90"
+                        >
+                          {item}
+                        </button>
+                      </SheetClose>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
@@ -63,6 +93,9 @@ const Header = () => {
             src={heroImage} 
             alt="Hero background"
             className="w-full h-full object-cover opacity-20"
+            decoding="async"
+            fetchPriority="high"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-hero"></div>
         </div>

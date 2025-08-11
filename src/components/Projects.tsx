@@ -122,6 +122,10 @@ const Projects = () => {
                       src={project.image} 
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                    
                     />
                   </div>
                   <div className="p-6">
@@ -175,7 +179,11 @@ const Projects = () => {
               <img 
                 src={selectedProject.image} 
                 alt={selectedProject.title}
-                className="w-full h-64 object-cover"
+                                className="w-full h-48 sm:h-64 object-cover"
+                loading="lazy"
+                decoding="async"
+                sizes="100vw"
+              
               />
               <button 
                 onClick={() => setSelectedProject(null)}
